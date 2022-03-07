@@ -18,7 +18,7 @@ export const Register = ({ isAuthenticated, setIsAuthenticated }) => {
     console.log(newUser);
     try {
       const resp = await axios.post(
-        "http://localhost:4000/users/register",
+        "/users/register",
         newUser,
         { withCredentials: true }
       );

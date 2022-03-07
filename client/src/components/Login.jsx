@@ -16,7 +16,7 @@ export const Login = ({ isAuthenticated, setIsAuthenticated }) => {
     e.preventDefault();
     try {
       const resp = await axios.post(
-        "http://localhost:4000/users/login",
+        "/users/login",
         newUser,
         { withCredentials: true }
       );

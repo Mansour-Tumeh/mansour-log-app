@@ -10,7 +10,7 @@ export const Home = ({ isAuthenticated, setIsAuthenticated }) => {
 
   const handleProducts = async () => {
     const resp = await axios.post(
-      "http://localhost:4000/products/add",
+      "/products/add",
       {
         product_id: 343124124,
       },
