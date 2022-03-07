@@ -19,7 +19,7 @@ exports.loginController = async (req, res) => {
       .json(db_user);
   } catch (error) {
     console.log(error);
-    res.status(500).json(error);
+    res.status(500).json({error , msg:"errror timeout"});
   }
 };
 
